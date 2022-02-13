@@ -105,4 +105,35 @@ ul {
   color: #AECD31
 }
 
-/* continue tomorrow */
+.juice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  animation: float 4s ease-in-out infinite;
+}
+
+.juice img {
+  max-height: 600px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -46%);
+  }
+  50% {
+    transform: translate(-50%, -54%);
+  }
+  100% {
+    transform: translate(-50%, -46%);
+  }
+}
+
+.leaves {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
